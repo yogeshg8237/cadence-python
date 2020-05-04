@@ -1,8 +1,8 @@
 # Intro: Fault-Oblivious Stateful Python Code
 
-cadence-python allows you to create Python functions that have their state (local variables etc..) implicitly saved such that if the process/machine fails the state of the function is not lost and can resume from where it left off. 
+cadence-python allows you to create stateful Python functions (with local variables etc..) that get implicitly saved such that if the process/machine running it fails, the state of this function is not lost and the process can resume from where it left off. 
 
-This programming model is useful whenever you need to ensure that a function runs to completion. For example:
+This programming model is useful whenever you need to ensure that a function that depends on external services runs to completion. For example:
 
 - Business logic involving multiple micro services
 - CI/CD pipelines
